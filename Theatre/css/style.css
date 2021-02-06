@@ -28,7 +28,8 @@ a{
 	padding-top: 150px;	
 }
 .header{
-	height: 105vh;
+	height: 100vh;
+	padding: 5px 0;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
