@@ -63,7 +63,7 @@ li{
 .second__line-search{
 	position:relative;
 }
-.second__line-search input{
+.second__line-input{
 	background: #EFEFEF;
 	border-radius: 40px;
 	border: none;
@@ -75,7 +75,7 @@ li{
 	font-size: 14px;
 	line-height: 20px;
 	font-weight: 400;
-	padding: 0 20px;
+	padding: 0 45px;
 }
 
 .second__line-search::before{
@@ -188,9 +188,14 @@ hr{
 }
 .assortments__wrapper{
 	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 .assortments__item{
-	width: 25%;
+	width: 23%;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
 	text-align: center;
 	background: #fff;
 	padding: 25px;
@@ -416,12 +421,6 @@ hr{
 	.header__body-img{
 		display: none;
 	}
-	.assortments__wrapper{
-		flex-wrap: wrap;
-	}
-	.assortments__item{
-		width: 50%;
-	}
 	.brand-img{
 		width: 33.3333%;
 	}
@@ -462,13 +461,9 @@ hr{
 	.second__line-list{
 		display: none;
 	}
-	.second__line-menu{
-		position: relative;
-	}
 	.menu-btn{
 		display: block;
 		position: absolute;
-		top: 50%;
 		transform: translateY(-50%);
 		right: 15px;
 	}
@@ -487,11 +482,15 @@ hr{
     	padding: 5px 0;
     	border-bottom: 3px solid #F13C6E;
     }
+    .header__top{
+    	position: relative;
+    }
     .second__line-list{
     	border-top: 3px solid #F13C6E;
     	position: absolute;
-    	width: 100vh;
-    	top:60px;
+    	width: 100%;
+    	top:280px;
+    	z-index: 1;
     	text-align: center;
     }
     .second__line-link{
@@ -504,11 +503,8 @@ hr{
     	border-bottom: none;
     }
     .assortments__item{
-		width: 100%;
-		margin-bottom: 10px;
-	}
-	.assortments__item:last-child{
-		margin-bottom: 0;
+		width: 49%;
+		margin-bottom: 25px;
 	}
 	.footer__contacts-adress{
 		width: 100%;
@@ -524,7 +520,7 @@ hr{
 		justify-content: space-between;
 	}
 	.second__line-phone-header{
-		text-align: left;
+		text-align: center;
 	}
 	.second__line-logo {
     	margin-right:0;
@@ -536,6 +532,9 @@ hr{
 	}
 	.header__body{
     	min-height: 62vh;
+	}
+	.assortments__item{
+		width: 100%;
 	}
 	.assortments__bonus-item{
 		justify-content: center;
@@ -570,6 +569,9 @@ hr{
 	.top__line{
 		display: none;
 	}
+	.second__line-list{
+		top: 330px;
+	}
 	.second__line-phone{
 		margin: 0 5px 10px 5px; 
 	}
@@ -581,6 +583,10 @@ hr{
     	line-height: 48px;
 	}	
 	.header__body{
-    	min-height: 55vh;
+    	min-height: 325px;
+	}
+	.second__line-button{
+		text-align: center;
+		width: 100%;
 	}
 }
