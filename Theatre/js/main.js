@@ -25,7 +25,7 @@ $(function(){
 	$('.close-btn').on('click', function(){
 		$('.header__mobile').removeClass('active');
 	});
-	  	$('.performances__body').slick('setPosition');
+
 	if ( $(window).width() < 1367 ) {
 
 		$('.performances__body').slick({
