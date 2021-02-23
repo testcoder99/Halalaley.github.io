@@ -27,6 +27,7 @@ $(function(){
 	});
 	
 	if ( $(window).width() < 1367 ) {
+		$('.performances__body').slick('setPosition');
 		$('.performances__body').slick({
 		slidesToShow:3.2,
 		slidesToScroll:1,
