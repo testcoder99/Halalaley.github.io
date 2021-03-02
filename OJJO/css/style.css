@@ -370,7 +370,7 @@ body{
 	flex-direction: column;
 }
 .galerey__content-item{
-	
+	position: relative;
 }
 .galerey__content-item span{
 	display: none;
