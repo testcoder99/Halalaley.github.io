@@ -406,13 +406,13 @@ body{
 	max-width: 160px;
 	max-height: 120px;
 }
-#Img{
+.galery-content{
 	transition: .4s;
 	width: 100%;
 	display: block;
 	height: auto;
 }
-#Img:hover{
+.galery-content:hover{
 	opacity: 0.8;
 }
 .galerey-modal{
@@ -450,7 +450,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	transition: all 1s ease;
-	height: 100vh;
+	height: 100%;
 }
 .modal-content, #caption{
 	-webkit-animation-name:zoom;
@@ -1304,7 +1304,7 @@ hr{
 	.product__body-images{
 		margin-bottom: 30px;
 	}
-	#Img:hover{
+	.galery-content:hover{
 		opacity: 1;
 	}
 	.product__body-images{   
