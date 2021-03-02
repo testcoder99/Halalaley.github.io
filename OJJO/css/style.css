@@ -1550,12 +1550,6 @@ hr{
 		margin: 0 -15px;
 	}
 }
-@media (max-height: 500px ){
-	.menu-mobile--active{
-		min-height: 320px;
-		overflow-y: scroll;
-	}
-}
 @media (max-width: 415px ){
 	.header__top{
 		justify-content: flex-start;
