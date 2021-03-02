@@ -1314,6 +1314,9 @@ hr{
 		width: 50%;
 		margin-bottom: 20px;
 	}
+	.modal-content, #caption{
+		animation-duration:0s;
+	}
 }
 @media (max-width:770px){
 	.blog__item{
