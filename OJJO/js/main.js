@@ -16,6 +16,14 @@ $(function(){
 		$('.subscribe__info-content').not($(this).next()).slideUp(300);
 	});
 
+	
+	$(".menu__btn").on("click", function(event){
+		event.preventDefault();//Убирает стандратное поведение кнопки
+		$(".menu-mobile").toggleClass("menu-mobile--active")
+		$(this).toggleClass("active")
+
+	});
+
 	var header =$("#header"),
 		contentH = $("#content").innerHeight(),
 		scrollOfset = $(window).scrollTop();
@@ -33,6 +41,7 @@ $(function(){
 
 		if( scrollOfset >= contentH) {
 			header.addClass("page-header--fixed");
+			header.addClass("page-header");
 		}
 		else{
 			header.removeClass("page-header--fixed");

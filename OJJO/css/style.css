@@ -1151,32 +1151,44 @@ hr{
 	.header__top{
 		justify-content: center;
 	}
-	.menu__btn{
-		width: 34px;
-		cursor: pointer;
-		display: block;
-		background:transparent;
-		padding: 0;
-		position: absolute;
-		right: 25px;
-		outline: none;
-		top: 40px;
-		border: 0;
+	.menu__btn-line::before{
+		top: -10px;
 	}
-	.menu__btn-line{
+	.menu__btn-line::before,
+	.menu__btn-line::after{
+		content: "";
+		left: 0;
+		width: 34px;
+		position: absolute;
 		background: #2f3035;
 		border-radius: 3px;
 		height: 4px;
+		transition: transform .2s linear;
 		background: #FFFFFF;
-		width: 100%;
-		margin-bottom: 8px;
 	}
-	.menu__btn-line:last-child{
-		margin-bottom: 0;
+	.menu__btn-line::after{
+		bottom: -10px;	
 	}
-	.menu__btn-line--short{
-		width: 60%;
+	.menu__btn-line{
+		width: 21px;
+		position: absolute;
+		border-radius: 3px;
+		height: 4px;
+		opacity: 1;
+		background: #FFFFFF;
 	}
+	.menu__btn.active .menu__btn-line{
+		background: none;
+	}
+	.menu__btn.active .menu__btn-line::before{
+		transform: rotate(45deg) translate3d(0px,-2px,0px);
+    	transform-origin: left top;
+	}
+	.menu__btn.active .menu__btn-line::after{
+		transform: rotate(-45deg) translate3d(0px,3px,0px);
+    	transform-origin: left bottom;
+	}
+
 	.menu-mobile{
 		display: block;
 		background-color: #333;
