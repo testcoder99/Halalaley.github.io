@@ -1555,4 +1555,7 @@ hr{
 		justify-content: flex-start;
 		padding-left: 10px;
 	}
+	.menu-mobile {
+		padding-top: 110px;
+	}
 }
