@@ -372,6 +372,9 @@ body{
 .galerey__content-item{
 	position: relative;
 }
+.galerey__content-item span{
+	display: none;
+}
 .galerey__content-poster{
 	width: 100%;
 }
