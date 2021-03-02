@@ -1283,10 +1283,15 @@ hr{
 		max-width: 50%;
 	}
 	.page-header{
-		position: fixed;
+		position: absolute;
 		width: 100%;
+		top: 0;
+		left: 0;
 		margin-bottom: 0;
 		z-index: 10;
+	}
+	.page-header--fixed{
+		position: fixed;
 	}
 	.page-header .menu-mobile{
 		transition: 0s all

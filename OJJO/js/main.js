@@ -16,7 +16,29 @@ $(function(){
 		$('.subscribe__info-content').not($(this).next()).slideUp(300);
 	});
 
-	
+	var header =$("#header"),
+		contentH = $("#content").innerHeight(),
+		scrollOfset = $(window).scrollTop();
+
+    checkScroll(scrollOfset);		
+
+	$(window).on("scroll", function() {
+		
+		scrollOfset = $(this).scrollTop();
+
+		checkScroll(scrollOfset);
+		
+	});
+
+	function checkScroll(scrollOfset) {
+
+		if( scrollOfset >= introH) {
+			header.addClass("header--fixed");
+		}
+		else{
+			header.removeClass("header--fixed");
+		}
+	}
 
 	jQuery("a.galerey__content-video").YouTubePopUp( { autoplay: 1 } );
    
