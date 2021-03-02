@@ -29,14 +29,13 @@ $(function(){
 		checkScroll(scrollOfset);
 		
 	});
-
 	function checkScroll(scrollOfset) {
 
-		if( scrollOfset >= introH) {
-			header.addClass("header--fixed");
+		if( scrollOfset >= contentH) {
+			header.addClass("page-header--fixed");
 		}
 		else{
-			header.removeClass("header--fixed");
+			header.removeClass("page-header--fixed");
 		}
 	}
 
