@@ -17,12 +17,6 @@ $(function(){
 	});
 
 	
-	$(".menu__btn").on("click", function(event){
-		event.preventDefault();//Убирает стандратное поведение кнопки
-		$(".menu-mobile").toggleClass("menu-mobile--active")
-		$(this).toggleClass("active")
-
-	});
 
 	var header =$("#header"),
 		contentH = $("#content").innerHeight(),
@@ -47,6 +41,13 @@ $(function(){
 			header.removeClass("page-header--fixed");
 		}
 	}
+	
+	$(".menu__btn").on("click", function(event){
+		event.preventDefault();//Убирает стандратное поведение кнопки
+		$(".menu-mobile").toggleClass("menu-mobile--active")
+		$(this).toggleClass("active")
+
+	});
 
 	jQuery("a.galerey__content-video").YouTubePopUp( { autoplay: 1 } );
    
