@@ -55,18 +55,7 @@ $(function(){
 	
 
 })
-	const menuBtn = document.querySelector('.menu__btn');
-	const closeBtn = document.querySelector('.menu-mobile__close');
-	const menuMobile = document.querySelector('.menu-mobile');
-
-	closeBtn.addEventListener('click', function(){
-		menuMobile.classList.remove('menu-mobile--active');
-	});
-
-	menuBtn.addEventListener('click',function(){
-		menuMobile.classList.add('menu-mobile--active');
-
-	});
+	
 	document.querySelectorAll('.catalog-filter__list-wrapper').forEach(function (dropDownWrapper){
 
 	const dropDownBtn = dropDownWrapper.querySelector('.catalog-filter__list-btn');
