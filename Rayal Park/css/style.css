@@ -206,6 +206,9 @@ body{
 	background-repeat: no-repeat;
 	min-height: 325px;
 }
+.video-section__wrapper-media span{
+	display: none;
+}
 .video-section__media-btn{
 	position: absolute;
 	top: 50%;
