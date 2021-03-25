@@ -224,6 +224,7 @@ body{
 }
 .portfolio{
 	padding: 110px 0 95px;
+	overflow-x: hidden;
 }
 .portfolio-title{
 	margin-bottom: 45px;
