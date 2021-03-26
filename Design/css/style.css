@@ -49,7 +49,7 @@ body{
 	position: absolute;
 	padding: 0;
 	border:0;
-	top: 75px;
+	top: 35px;
 	right: 0;
 	z-index: 4;
 	display: none;
@@ -364,12 +364,18 @@ body{
 @media (max-width:770px){
 	.header__active-fixed{
 		padding-top: 0;
+	}    
+	.header__top-fixed{
+		background: #e4e4e4;
+	}
+	.header__top-fixed .header__top-content{
+		height: 80px;
 	}
 	.menu__btn{
 		display: block;
 	}
 	.header__top-content{
-		padding-bottom: 0;
+		padding: 0;
 		border-bottom: 0;
 	}
 	.header__top-list{
