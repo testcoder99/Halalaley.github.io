@@ -12,9 +12,10 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="header__top">
+  <header class="header" id="Home">
+    <div id="header__top" class="header__top">
+      <div class="container">
+       <div class="header__top-content">
         <nav class="nav">
           <button class="menu__btn">
             <div class="menu__btn-line"></div>
@@ -23,86 +24,89 @@
           </button>
           <ul class="header__top-list">
             <li class="header__top-item">
-              <a class="header__top-link" href="#">Home</a>
+              <a class="header__top-link active" href="#" data-scroll="#Home">Home</a>
             </li>
-              <li class="header__top-item">
-                <a class="header__top-link" href="#">About me</a>
+            <li class="header__top-item">
+              <a class="header__top-link" href="#" data-scroll="#About">About me</a>
             </li>
-              <li class="header__top-item">
-                <a class="header__top-link" href="#">Skills</a>
+            <li class="header__top-item">
+              <a class="header__top-link" href="#" data-scroll="#Skills">Skills</a>
             </li>
-              <li class="header__top-item">
-                <a class="header__top-link" href="#">Portfolio</a>
+            <li class="header__top-item">
+              <a class="header__top-link" href="#" data-scroll="#Portfolio">Portfolio</a>
             </li>
-              <li class="header__top-item">
-                <a class="header__top-link" href="#">Contacts</a>
+            <li class="header__top-item">
+              <a class="header__top-link" href="#" data-scroll="#Contacts">Contacts</a>
             </li>
           </ul>
         </nav>
       </div>
+    </div>
+  </div>
+      <div class="container"> 
       <div class="menu-mobile">
-            <span class="menu-mobile__close"></span>
-            <ul class="header__top-list header__top-list--mobile">
-            <li class="header__top-item">
-              <a class="header__top-link" href="#">Home</a>
-            </li>
-              <li class="header__top-item">
-                <a class="header__top-link" href="#">About me</a>
-            </li>
-              <li class="header__top-item">
-                <a class="header__top-link" href="#">Skills</a>
-            </li>
-              <li class="header__top-item">
-                <a class="header__top-link" href="#">Portfolio</a>
-            </li>
-              <li class="header__top-item">
-                <a class="header__top-link" href="#">Contacts</a>
-            </li>
-          </ul>
-          <div class="header__body-language">
-            <a class="header__language-item" href="index-ru.html">RU</a>
-            <a class="header__language-item header__language-item--active" href="#">| ENG</a>
-          </div>
-          </div>
-      <div class="header__body">
-        <div class="header__body-text">
-          <h1 class="header__body-title">
-            Denis Novik
-          </h1>
-          <p class="header__body-info">
-            UX | UI designer
-            24 years old, Minsk
-          </p>
-          </div> 
-          <div class="header__body-language">
-            <a class="header__language-item" href="index-ru.html">RU</a>
-            <a class="header__language-item header__language-item--active" href="#">| ENG</a>
-          </div>
-        <div class="header__body-slider">
-               <div class="header__slider-images">
-                 <img class="header__slider-img" src="images/header__slider-img1.jpg">
-               </div>
-               <div class="header__slider-images">
-                 <img class="header__slider-img" src="images/header__slider-img2.jpg">
-               </div> 
-               <div class="header__slider-images">
-                 <img class="header__slider-img" src="images/header__slider-img3.jpg">
-               </div> 
-               <div class="header__slider-images">
-                 <img class="header__slider-img" src="images/header__slider-img4.jpg">
-               </div>    
-               <div class="header__slider-images">
-                 <img class="header__slider-img" src="images/header__slider-img5.jpg">
-               </div> 
-               <div class="header__slider-images">
-                 <img class="header__slider-img" src="images/header__slider-img6.jpg">
-               </div> 
+        <span class="menu-mobile__close"></span>
+        <ul class="header__top-list header__top-list--mobile">
+          <li class="header__top-item">
+            <a class="header__top-link active" href="#" data-scroll="#Home">Home</a>
+          </li>
+          <li class="header__top-item">
+            <a class="header__top-link" href="#" data-scroll="#About">About me</a>
+          </li>
+          <li class="header__top-item">
+            <a class="header__top-link" href="#" data-scroll="#Skills">Skills</a>
+          </li>
+          <li class="header__top-item">
+            <a class="header__top-link" href="#" data-scroll="#Portfolio">Portfolio</a>
+          </li>
+          <li class="header__top-item">
+            <a class="header__top-link" href="#" data-scroll="#Contacts">Contacts</a>
+          </li>
+        </ul>
+        <div class="header__body-language">
+          <a class="header__language-item" href="index-ru.html">RU</a>
+          <a class="header__language-item header__language-item--active" href="#">| ENG</a>
         </div>
       </div>
-    </div>
-  </header>
+    <div class="header__body" id="body">
+      <div class="header__body-text">
+        <h1 class="header__body-title">
+          Denis Novik
+        </h1>
+        <p class="header__body-info">
+          UX | UI designer
+          24 years old, Minsk
+        </p>
+      </div> 
+      <div class="header__body-language">
+        <a class="header__language-item" href="index-ru.html">RU</a>
+        <a class="header__language-item header__language-item--active" href="#">| ENG</a>
+      </div>
+      <div class="header__body-slider">
+       <div class="header__slider-images">
+         <img class="header__slider-img" src="images/header__slider-img1.jpg">
+       </div>
+       <div class="header__slider-images">
+         <img class="header__slider-img" src="images/header__slider-img2.jpg">
+       </div> 
+       <div class="header__slider-images">
+         <img class="header__slider-img" src="images/header__slider-img3.jpg">
+       </div> 
+       <div class="header__slider-images">
+         <img class="header__slider-img" src="images/header__slider-img4.jpg">
+       </div>    
+       <div class="header__slider-images">
+         <img class="header__slider-img" src="images/header__slider-img5.jpg">
+       </div> 
+       <div class="header__slider-images">
+         <img class="header__slider-img" src="images/header__slider-img6.jpg">
+       </div> 
+     </div>
+   </div>
+ </div>
+</header>
 
- <section class="about section-page">
+ <section class="about section-page" id="About">
       <h2 class="title title-about anim-items anim-no-hide">About me</h2>
       <div class="about__text">
         <p class="about__text-paragraph anim-items anim-no-hide">
@@ -120,7 +124,7 @@
       </div>
   </section>
 
-  <section class="skills">
+  <section class="skills" id="Skills">
     <div class="container">
       <h2 class="title title-skills anim-items anim-no-hide">
         Skills
@@ -180,7 +184,7 @@
     </div>
   </section>
  
-  <section class="portfolio section-page">
+  <section class="portfolio section-page" id="Portfolio">
     <div class="container">
       <h2 class="title portfolio-title anim-items anim-no-hide">Portfolio</h2>
       <div class="portfolio__content">
@@ -200,7 +204,7 @@
     </div>
   </section>
  
-  <footer class="footer">
+  <footer class="footer" id="Contacts">
     <div class="footer__body">
       <h2 class="title footer-title anim-items anim-no-hide">
         Contacts
@@ -214,16 +218,16 @@
       </a>
       <div class="footer__body-socials">
         <div class="footer__socials-inner">
-            <a class="footer__socials-item" href="#">
+            <a class="footer__socials-item anim-items anim-no-hide" href="#">
               <img src="images/in-icon.svg">
             </a>
-            <a class="footer__socials-item" href="#">
+            <a class="footer__socials-item anim-items anim-no-hide" href="#">
               <img src="images/instagram-icon.svg">
             </a>
-            <a class="footer__socials-item" href="#">
+            <a class="footer__socials-item anim-items anim-no-hide" href="#">
               <img src="images/be-icon.svg">
             </a>
-            <a class="footer__socials-item" href="#">
+            <a class="footer__socials-item anim-items anim-no-hide" href="#">
               <img src="images/surface-icon.svg">
             </a>
         </div> 

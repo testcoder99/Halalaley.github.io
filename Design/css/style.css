@@ -30,22 +30,15 @@ body{
 	margin-bottom: 25px;
 	text-align: center;
 }
-.anim-show{
-	transform: translate(0, 120%);
-	opacity: 0;
-	transition: all .5s ease 0s;
-}
-.anim-show.active,
-.active .anim-show{
-	opacity: 1;
-	transform: translate(0,0);
-}
 .section-page{
 	background: #F6F6F6;
 }
 .header{
 	background-color: #fff;
 	padding-bottom: 105px;
+}
+.header__active-fixed{
+	padding-top: 85px;
 }
 .menu-mobile{
 	display: none;
@@ -68,8 +61,29 @@ body{
 	width: 100%;
 	margin-bottom: 4px;
 }
-.header__top{
+.header__top-fixed{
+	position: fixed;
+	left: 0;
+	z-index: 5;
+	top: 0;
+	width: 100%;
+	animation-name:show__header;
+	background: #828282;
+	animation-duration: .4s;
+}
+.header__top-fixed .header__top-list{
+	color: #fff;
+}
+.header__top-fixed .header__top-link:hover{
+	color: #333333;
+}
+.header__top-fixed .header{
+	padding-top: 200px;
+}
+.header__top-content{
 	padding-bottom: 30px;
+	padding-left: 0;
+	padding-right: 0;
 	border-bottom: 1px solid #828282;
 	transform: matrix(1, 0, 0, 1, 0, 0);
 }
@@ -85,11 +99,27 @@ body{
 	font-weight: 500;
 	color: #828282;
 }
-.header__top-item{
+@keyframes show__header{
+	0%{
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.header__top-link{
 	transition: .4s all;
 }
-.header__top-item:hover{
+.header__top-link:hover{
 	color: #070707;
+}
+.header__top-link.active{
+	color: #070707;
+}
+.header__top-fixed .header__top-link.active{
+	color: #333333;
 }
 .header__body{
 	padding-top: 40px;
@@ -287,7 +317,7 @@ body{
 	display: inline-block;
 	border-radius: 25px;
 	border: 1px solid rgba(0,0,0,0);
-	transition: .4s all ease .3s;
+	transition: background-color.4s, color .4s, transform ease .5s;
 	transform: scale(0);
 }
 .footer__body-link.active{
@@ -304,6 +334,14 @@ body{
 	align-items: center;
 	margin-bottom: 45px;
 }
+.footer__socials-item{
+	opacity: 0;
+	transition: all .5s ease .4s;
+}
+.footer__socials-item.active{
+	opacity: 1;
+}
+.footer__socials-item
 .footer__socials-item img{
 	display: block;
 	width: 100%;
@@ -312,7 +350,6 @@ body{
 	font-size: 14px;
 	line-height: 17px;
 	text-align: center;
-
 	color: #828282;
 }
 
@@ -328,7 +365,7 @@ body{
 	.menu__btn{
 		display: block;
 	}
-	.header__top{
+	.header__top-content{
 		padding-bottom: 0;
 		border-bottom: 0;
 	}
@@ -449,7 +486,7 @@ body{
 		margin-bottom: 0;
 	}
 	.portfolio{
-		padding: 80px 0;
+    	padding: 40px 0;
 	}
 	.title-skills{
 		margin-bottom: 50px;
