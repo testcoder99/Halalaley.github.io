@@ -408,7 +408,6 @@ body{
 		z-index: 5;
 		transform: translateX(-200%);
 		height: 100vh;
-		min-height: 590px;
 		transition: .4s all;
 		padding: 55px 25px 55px;
 		z-index: 7;
