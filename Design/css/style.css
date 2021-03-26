@@ -49,7 +49,7 @@ body{
 	position: absolute;
 	padding: 0;
 	border:0;
-	top: 35px;
+	top: 30px;
 	right: 0;
 	z-index: 4;
 	display: none;
@@ -369,7 +369,7 @@ body{
 		background: #e4e4e4;
 	}
 	.header__top-fixed .header__top-content{
-		height: 80px;
+		height: 70px;
 	}
 	.menu__btn{
 		display: block;
@@ -404,12 +404,14 @@ body{
 		right: 0;
 		width: 100%;
 		display: block;
+		position: fixed;
+		z-index: 5;
 		transform: translateX(-200%);
 		height: 100vh;
 		min-height: 590px;
 		transition: .4s all;
 		padding: 65px 25px 55px;
-		z-index: 4;
+		z-index: 7;
 	}
 	.menu-mobile--active{
 		transform: translateX(0);
@@ -471,7 +473,7 @@ body{
 		margin-bottom:85px;
 	}
 	.skills{
-    	padding: 60px 0 70px;
+    	padding: 70px;
 	}
 
 
@@ -496,7 +498,7 @@ body{
 		margin-bottom: 0;
 	}
 	.portfolio{
-    	padding: 40px 0;
+    	padding: 70px 0;
 	}
 	.title-skills{
 		margin-bottom: 50px;
