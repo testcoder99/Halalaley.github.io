@@ -12,9 +12,10 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="header__top">
+  <header class="header" id="Home">
+    <div class="header__top" id="header__top">
+      <div class="container">
+       <div class="header__top-content">
         <nav class="nav">
           <button class="menu__btn">
             <div class="menu__btn-line"></div>
@@ -23,110 +24,113 @@
           </button>
           <ul class="header__top-list">
             <li class="header__top-item">
-              <a class="header__top-link" href="#">Главная</a>
+              <a class="header__top-link active" href="#" data-scroll="#Home">Home</a>
             </li>
-              <li class="header__top-item">
-                <a class="header__top-link" href="#">Обо мне</a>
+            <li class="header__top-item">
+              <a class="header__top-link" href="#" data-scroll="#About">About me</a>
             </li>
-              <li class="header__top-item">
-                <a class="header__top-link" href="#">Мои навыки</a>
+            <li class="header__top-item">
+              <a class="header__top-link" href="#" data-scroll="#Skills">Skills</a>
             </li>
-              <li class="header__top-item">
-                <a class="header__top-link" href="#">Портфолио</a>
+            <li class="header__top-item">
+              <a class="header__top-link" href="#" data-scroll="#Portfolio">Portfolio</a>
             </li>
-              <li class="header__top-item">
-                <a class="header__top-link" href="#">Контакты</a>
+            <li class="header__top-item">
+              <a class="header__top-link" href="#" data-scroll="#Contacts">Contacts</a>
             </li>
           </ul>
         </nav>
       </div>
-       <div class="menu-mobile">
-            <span class="menu-mobile__close"></span>
-            <ul class="header__top-list header__top-list--mobile">
-            <li class="header__top-item">
-              <a class="header__top-link" href="#">Home</a>
-            </li>
-              <li class="header__top-item">
-                <a class="header__top-link" href="#">About me</a>
-            </li>
-              <li class="header__top-item">
-                <a class="header__top-link" href="#">Skills</a>
-            </li>
-              <li class="header__top-item">
-                <a class="header__top-link" href="#">Portfolio</a>
-            </li>
-              <li class="header__top-item">
-                <a class="header__top-link" href="#">Contacts</a>
-            </li>
-          </ul>
-          <div class="header__body-language">
-            <a class="header__language-item" href="index-ru.html">RU</a>
-            <a class="header__language-item header__language-item--active" href="#">| ENG</a>
-          </div>
-      </div>
-      <div class="header__body">
-        <div class="header__body-text">
-          <h1 class="header__body-title">
-            Денис Новик
-          </h1>
-          <p class="header__body-info">
-            UX | UI designer
-            24 года, Минск
-          </p>
-          <div class="header__body-language">
-            <a class="header__language-item header__language-item--active header__language-item--active" href="#">RU</a>
-            <a class="header__language-item" href="index-eng.html">| ENG</a>
-          </div>
-        </div>  
-         <div class="header__body-slider">
-               <div class="header__slider-images">
-                 <img class="header__slider-img" src="images/header__slider-img1.jpg">
-               </div>
-               <div class="header__slider-images">
-                 <img class="header__slider-img" src="images/header__slider-img2.jpg">
-               </div> 
-               <div class="header__slider-images">
-                 <img class="header__slider-img" src="images/header__slider-img3.jpg">
-               </div> 
-               <div class="header__slider-images">
-                 <img class="header__slider-img" src="images/header__slider-img4.jpg">
-               </div>    
-               <div class="header__slider-images">
-                 <img class="header__slider-img" src="images/header__slider-img5.jpg">
-               </div> 
-               <div class="header__slider-images">
-                 <img class="header__slider-img" src="images/header__slider-img6.jpg">
-               </div> 
+    </div>
+  </div>
+      <div class="container"> 
+      <div class="menu-mobile">
+        <span class="menu-mobile__close"></span>
+        <ul class="header__top-list header__top-list--mobile">
+          <li class="header__top-item">
+            <a class="header__top-link active" href="#" data-scroll="#Home">Home</a>
+          </li>
+          <li class="header__top-item">
+            <a class="header__top-link" href="#" data-scroll="#About">About me</a>
+          </li>
+          <li class="header__top-item">
+            <a class="header__top-link" href="#" data-scroll="#Skills">Skills</a>
+          </li>
+          <li class="header__top-item">
+            <a class="header__top-link" href="#" data-scroll="#Portfolio">Portfolio</a>
+          </li>
+          <li class="header__top-item">
+            <a class="header__top-link" href="#" data-scroll="#Contacts">Contacts</a>
+          </li>
+        </ul>
+        <div class="header__body-language">
+          <a class="header__language-item" href="index-ru.html">RU</a>
+          <a class="header__language-item header__language-item--active" href="#">| ENG</a>
         </div>
       </div>
-    </div>
-  </header><!--51:22-->
+    <div class="header__body" id="body">
+      <div class="header__body-text">
+        <h1 class="header__body-title">
+          Denis Novik
+        </h1>
+        <p class="header__body-info">
+          UX | UI designer
+          24 years old, Minsk
+        </p>
+      </div> 
+      <div class="header__body-language">
+        <a class="header__language-item" href="index-ru.html">RU</a>
+        <a class="header__language-item header__language-item--active" href="#">| ENG</a>
+      </div>
+      <div class="header__body-slider">
+       <div class="header__slider-images">
+         <img class="header__slider-img" src="images/header__slider-img1.jpg">
+       </div>
+       <div class="header__slider-images">
+         <img class="header__slider-img" src="images/header__slider-img2.jpg">
+       </div> 
+       <div class="header__slider-images">
+         <img class="header__slider-img" src="images/header__slider-img3.jpg">
+       </div> 
+       <div class="header__slider-images">
+         <img class="header__slider-img" src="images/header__slider-img4.jpg">
+       </div>    
+       <div class="header__slider-images">
+         <img class="header__slider-img" src="images/header__slider-img5.jpg">
+       </div> 
+       <div class="header__slider-images">
+         <img class="header__slider-img" src="images/header__slider-img6.jpg">
+       </div> 
+     </div>
+   </div>
+ </div>
+</header>
 
-  <section class="about section-page">
-      <h2 class="title anim-items anim-no-hide">Обо мне</h2>
+ <section class="about section-page" id="About">
+      <h2 class="title title-about anim-items anim-no-hide">About me</h2>
       <div class="about__text">
         <p class="about__text-paragraph anim-items anim-no-hide">
-          Привет, я Денис - UX / UI дизайнер из Минска
-          Интересуюсь дизайном и всем, что с ним связано.
+          Hi, I'm Denis – UX/UI designer from Minsk. 
+          I'm interested in design and everything connected with it.
         </p>
         <p class="about__text-paragraph anim-items anim-no-hide">
-          Я учусь на курсах «Веб и мобильный дизайн».
-          интерфейсы »в IT-Академии.
+          I'm studying at courses "Web and mobile design 
+          interfaces" in IT-Academy.
         </p>
         <p class="about__text-paragraph anim-items anim-no-hide">
-          Готовы реализовать отличные проекты
-          с замечательными людьми.
+          Ready to implement excellent projects
+          with wonderful people.
         </p>
       </div>
-  </section><!--14:36-->
+  </section>
 
-  <section class="skills">
+  <section class="skills" id="Skills">
     <div class="container">
       <h2 class="title title-skills anim-items anim-no-hide">
-        Мои навыки
+        Skills
       </h2>
       <p class="skills__text anim-items anim-no-hide">
-        Я работаю в таких программах как
+        I work in such programs as
       </p>
       <div class="skills__inner">
         <div class="skills__inner-item">
@@ -142,7 +146,7 @@
           </div>
         </div>
         <div class="skills__inner-item">
-          <div class="skills__item-image  anim-items anim-no-hide">
+          <div class="skills__item-image anim-items anim-no-hide">
             <img src="images/tratot.jpg">
           </div>
           <p class="skills__item-name anim-items anim-no-hide">
@@ -180,61 +184,55 @@
     </div>
   </section>
  
-  <section class="portfolio section-page">
+  <section class="portfolio section-page" id="Portfolio">
     <div class="container">
-      <h2 class="title portfolio-title anim-items anim-no-hide">Портфолио</h2>
+      <h2 class="title portfolio-title anim-items anim-no-hide">Portfolio</h2>
       <div class="portfolio__content">
-        <div class="portfolio__content-image  anim-items anim-no-hide">
-          <img src="images/portfolio-img1.jpg"> 
-            <a class="portfolio__content-text anim-items anim-no-hide" href="#">
-              Интернет-магазин модной одежды - Домашняя страница
-            </a>
+        <div class="portfolio__content-image anim-items anim-no-hide">
+          <img src="images/portfolio-img1.jpg" alt="">
+            <a class="portfolio__content-text anim-items anim-no-hide" href="#">Online fashion store - Homepage</a>
         </div>
         <div class="portfolio__content-image anim-items anim-no-hide">
           <img src="images/portfolio-img2.jpg" alt="">
-            <a class="portfolio__content-text anim-items anim-no-hide" href="#">
-              Магазин Reebok - Концепция 
-            </a>
+            <a class="portfolio__content-text anim-items anim-no-hide" href="#">Reebok Store - Concept</a>
         </div>
         <div class="portfolio__content-image anim-items anim-no-hide">
           <img src="images/portfolio-img3.jpg">
-            <a class="portfolio__content-text anim-items anim-no-hide" href="#">
-              Посадочная страница Braun - Концепция
-            </a>
+            <a class="portfolio__content-text anim-items anim-no-hide" href="#">Braun Landing Page - Concept</a>
         </div>
       </div>
     </div>
   </section>
-    
-  <footer class="footer">
+ 
+  <footer class="footer" id="Contacts">
     <div class="footer__body">
       <h2 class="title footer-title anim-items anim-no-hide">
-        Контакты
+        Contacts
       </h2>
       <p class="footer__body-text anim-items anim-no-hide">
-        Хотите узнать больше или просто поболтать?
-        Пожалуйста!
+        Want to know more or just chat? 
+        You are welcome!
       </p>
       <a class="footer__body-link anim-items anim-no-hide" href="#">
-        Отправить сообщение
+        Send message
       </a>
       <div class="footer__body-socials">
         <div class="footer__socials-inner">
-          <a class="footer__socials-item anim-items anim-no-hide" href="#">
-            <img src="images/in-icon.svg">
-          </a>
-          <a class="footer__socials-item anim-items anim-no-hide" href="#">
-            <img src="images/instagram-icon.svg">
-          </a>
-          <a class="footer__socials-item anim-items anim-no-hide" href="#">
-            <img src="images/be-icon.svg">
-          </a>
-          <a class="footer__socials-item anim-items anim-no-hide" href="#">
-            <img src="images/surface-icon.svg">
-          </a>
-          </div> 
+            <a class="footer__socials-item anim-items anim-no-hide" href="#">
+              <img src="images/in-icon.svg">
+            </a>
+            <a class="footer__socials-item anim-items anim-no-hide" href="#">
+              <img src="images/instagram-icon.svg">
+            </a>
+            <a class="footer__socials-item anim-items anim-no-hide" href="#">
+              <img src="images/be-icon.svg">
+            </a>
+            <a class="footer__socials-item anim-items anim-no-hide" href="#">
+              <img src="images/surface-icon.svg">
+            </a>
+        </div> 
           <p class="footer__socials-text">
-            Поставьте лайк мне в<br>
+            Like me on<br>
             LinkedIn, Instagram, Behance, Dribble
           </p>
       </div> 
