@@ -400,6 +400,7 @@ body{
 		display: block;
 		transform: translateX(-200%);
 		height: 100vh;
+		min-height: 590px;
 		transition: .4s all;
 		padding: 65px 25px 55px;
 		z-index: 4;
