@@ -38,7 +38,6 @@ $(function(){
 			blockId = $this.data("scroll"),
 			blockOffset = $(blockId).offset().top;
 		$(".menu-mobile").removeClass("menu-mobile--active");
-		// $("nav__toggle").removeClass("active")
 		$(".header__top-link").removeClass("active")	
 		$this.addClass("active");
 

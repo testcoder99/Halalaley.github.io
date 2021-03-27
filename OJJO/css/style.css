@@ -277,10 +277,6 @@ body{
 .categories__item--active .border{
 	display: none;
 }
-.categories__item-link.categories__item-link--active:hover{
-
-}
-
 .our-salon{
 	padding: 100px 0;
 	background-repeat: no-repeat;
@@ -400,6 +396,9 @@ body{
 	cursor: pointer;
 }
 .galerey__images-item--product{
+	
+}
+.galerey__images-item--main{
 	margin-bottom: 30px;
 }
 .product__images-min{
@@ -962,7 +961,7 @@ hr{
 }
 .product__body-info{
 	max-width: 540px;
-	padding: 10px;
+	padding: 7px;
 	border: 1px solid #D6D6D6;
 }
 .product__info-body{
@@ -1459,9 +1458,6 @@ hr{
 		width: 100%;
 		margin-bottom: 0;
 	}
-	.galerey__images-item{
-		width: auto;
-	}
 	.modal-content{
 		width: 75%;
 	}
@@ -1505,7 +1501,10 @@ hr{
 		font-size: 20px;
 	}
 	.catalog__wrapper{
-		padding-top: 0;
+		padding-top: 40px;
+	}
+	.catalog__wrapper hr{
+		display: none;
 	}
 	.catalog__wrapper-item{
 		width: 100%;
